@@ -19,6 +19,8 @@ Pricing (Discounted Price, Actual Price, discount_percentage)
 User-generated content (review_title, review_content, rating, rating_count)
 
 🧹 2. Data Cleaning (in Python)
+-----------------------------------------------------
+
 Using the Jupyter Notebook **cleaning.ipynb**, we cleaned the data by:
 
 Combining category levels into one hierarchical column (category)

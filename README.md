@@ -1,93 +1,91 @@
-# Amazon-sales-Project
 📊 Amazon Product Reviews Analysis - Power BI Project
-Project Overview:
-This project aims to analyze customer reviews and product data from Amazon to derive actionable insights into product performance, customer satisfaction, pricing strategies, and category-level trends. The analysis follows the Data Analysis Life Cycle and is visualized through an interactive Power BI dashboard.
-🧭 Data Analysis Life Cycle:
-1. Data Collection
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🔍 Project Overview:
+-----------------------------------------------------
 
-We collected raw product data directly from Amazon, including product details, pricing, discount information, customer reviews, ratings, and associated metadata.
-Key columns included:
+This project focuses on analyzing customer reviews and product data from Amazon to extract insightful patterns and business recommendations. The analysis follows the Data Analysis Life Cycle and is showcased through a rich, interactive Power BI Dashboard.
 
-product_id, product_name
+🧭 Data Analysis Life Cycle
+🗃️ 1. Data Collection
+-----------------------------------------------------
+
+We collected real-world product and review data from Amazon, which includes:
+
+Product details (product_id, product_name)
 
 Category hierarchy (Category.L1 to Category.L5)
 
-Prices (discounted and actual)
+Pricing (Discounted Price, Actual Price, discount_percentage)
 
-rating, rating_count
+User-generated content (review_title, review_content, rating, rating_count)
 
-user_id, user_name, review_title, review_content
+🧹 2. Data Cleaning (in Python)
+Using the Jupyter Notebook **cleaning.ipynb**, we cleaned the data by:
 
-2. Data Cleaning (Done in Python)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Combining category levels into one hierarchical column (category)
 
-Using Python, we cleaned and transformed the dataset by:
+Converting price values to numerical and fixing encodings
 
-Merging and flattening category columns into one hierarchical string (category)
+Removing duplicate or unnecessary columns (e.g., extra reviews)
 
-Standardizing price fields and converting to numeric
+Standardizing formats for consistency
 
-Removing unnecessary columns (like excessive review info)
+📊 3. Data Exploration
+-----------------------------------------------------
 
-Ensuring consistency in format and encoding
+We performed initial EDA to:
 
-You can find the full cleaning process in the accompanying Jupyter Notebook Cleaning.ipynb.
+Identify top-rated and most-reviewed products
 
-3. Data Exploration
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Explore rating distributions
 
-Initial insights include:
+Analyze category-wise performance
 
-Distribution of ratings across products
+Spot outliers in pricing and ratings
 
-Most reviewed and highest-rated products
+📈 4. Data Analysis & Visualization
+-----------------------------------------------------
 
-Correlation between discount and review count
+We built an interactive Power BI Dashboard to display:
 
-Categories with the highest customer interest
+Rating trends across products and categories
 
-4. Data Analysis & Visualization (in Power BI)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-A Power BI dashboard was built to visualize:
+Top-performing products (by reviews and ratings)
 
-Product rating trends
+Price vs Rating correlation
 
-Top-rated vs most-reviewed products
+Category segmentation for better targeting
 
-Category-wise distribution
+💡 5. Insights & Recommendations
+-----------------------------------------------------
+The dashboard reveals several business insights:
 
-Pricing vs rating analysis
+High-performing products by rating & review volume
 
-Word clouds or summaries of review sentiments (if included)
+Categories with strong customer interest
 
-5. Insights & Recommendations
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Opportunities to improve underperforming products
 
-The dashboard enables stakeholders to:
-
-Identify top-performing products
-
-Understand customer preferences by category
-
-Adjust pricing strategies based on review/ratings
-
-Detect products with high engagement but poor reviews (action needed)
+Pricing strategies aligned with customer feedback
 
 🧰 Tools Used
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------
 
-Python (for cleaning and preprocessing)
-Power BI (for interactive dashboard visualization)
-Amazon Data (as source)
+🐍 Python – For preprocessing and cleaning
+
+📊 Power BI – For dashboard creation and visualization
+
+🛒 Amazon Product Data – As the primary source
 
 📬 Contact
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------
 
 For inquiries, feedback, or collaboration opportunities, feel free to reach out:
-Abdelrahman Abdelfattah
-Email: abdoabdelfattah243@gmail.com
-Location: obour city, Egypt
-Open to freelance opportunities and collaborations!📬 Contact
 
+👤 Name: Abdelrahman Abdelfattah
+
+📧 Email: abdoabdelfattah243@gmail.com
+
+📍 Location: Obour City, Egypt
+
+🤝 Availability: Open to freelance opportunities and collaborations!
 
